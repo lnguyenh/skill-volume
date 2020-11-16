@@ -11,4 +11,4 @@ skillMetadata:
       - name: default_volume
         type: number
         label: Default volume percent
-        value: "55"
+        value: "50"
