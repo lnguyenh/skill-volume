@@ -113,7 +113,7 @@ class VolumeSkill(MycroftSkill):
         self.add_event('recognizer_loop:record_end',
                        self.unduck)
 
-        default_volume = self.settings.get('default_volume')
+        default_volume = self.settings.get('default_volume', 50)
         self._setvolume(default_volume)
         self.log.info(f'Startup volume set to {default_volume} percent')
         self.vol_before_mute = default_volume
